@@ -1,0 +1,33 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: fit-content;
+}
+
+.exists {
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid black;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.removed {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  transform: scale(0);
+  transform-origin: left;
+  transition: all 0.5s ease;
+}
